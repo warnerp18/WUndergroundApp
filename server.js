@@ -26,15 +26,17 @@ function startServer() {
                 querify(req.query)
             ].join("");
 
+            console.log(req.query);
+            console.log(url);
+
             req.pipe(request(url)).pipe(res);
         });
     }
 
-    // add your proxies here.
+    // add your proxies here
     proxify('/wunderground/api', 'http://http://api.wunderground.com/api');
-    // examples:
-    // proxify('/yummly/recipes', 'http://api.yummly.com/v1/api/recipes');
-    // proxify('/brewery/styles', 'https://api.brewerydb.com/v2/styles');
+    //proxify('/yummly/recipes', 'http://api.yummly.com/v1/api/recipes');
+    //proxify('/brewery/styles', 'https://api.brewerydb.com/v2/styles');
 
     // all environments
     app.set('port', process.argv[3] || process.env.PORT || 3000);
