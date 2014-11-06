@@ -34,18 +34,18 @@
 
     WeatherClient.prototype.queryAPI = function(state, city) {
         var url = [
-            "http://api.wunderground.com/api/",
-            this.options.keyid,
-            "/forecast/geolookup/conditions/q/",
-            "TX",
-            "/",
-            "Houston",
-            ".json"
+            "/wunderground/api/",
+            //this.options.keyid,
+            //"/forecast/geolookup/conditions/q/",
+            //"TX",
+            //"/",
+            //"Houston",
+            //".json"
         ];
         return $.get(url.join('')).then(function() {
             console.log(url);
-            console.log("hi");
-            return arguments[0];
+            //console.log(arguments[0]);
+            return arguments[0].current_observation;
         })
     }
 
@@ -53,7 +53,7 @@
         $.when(
             this.queryAPI("TX", "Houston")
         ).then(function() {
-            arguments[0].locations.forEach(function(data) {
+            arguments.forEach(function(data) {
                 new WeatherView(data);
             })
         })
@@ -67,7 +67,7 @@
         $.when(
             this.queryAPI("TX", "Houston")
         ).then(function(/*TX, Houston*/) {
-            self.makeWeatherUndergroundRequest(data);
+            self.makeWeatherUndergroundRequest();
         })
 
     };

@@ -34,7 +34,7 @@ function startServer() {
     }
 
     // add your proxies here
-    proxify('/wunderground/api', 'http://http://api.wunderground.com/api');
+    proxify('/wunderground/api', 'http://api.wunderground.com/api/6b18e3006f0c1e2b/forecast/geolookup/conditions/q/TX/Houston.json');
     //proxify('/yummly/recipes', 'http://api.yummly.com/v1/api/recipes');
     //proxify('/brewery/styles', 'https://api.brewerydb.com/v2/styles');
 
