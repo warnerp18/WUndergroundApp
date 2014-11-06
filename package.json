@@ -1,5 +1,5 @@
 {
-  "name": "SpotifyApp",
+  "name": "WUnderground App",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/warnerp18/SpotifyApp.git"
+    "url": "https://github.com/warnerp18/WUndergroundApp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/warnerp18/SpotifyApp/issues"
+    "url": "https://github.com/warnerp18/WUndergroundApp/issues"
   },
-  "homepage": "https://github.com/warnerp18/SpotifyApp",
+  "homepage": "https://github.com/warnerp18/WUndergroundApp",
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^1.0.1",

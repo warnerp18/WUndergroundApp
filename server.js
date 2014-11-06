@@ -31,7 +31,7 @@ function startServer() {
     }
 
     // add your proxies here.
-    //
+    proxify('/wunderground/api', 'http://http://api.wunderground.com/api');
     // examples:
     // proxify('/yummly/recipes', 'http://api.yummly.com/v1/api/recipes');
     // proxify('/brewery/styles', 'https://api.brewerydb.com/v2/styles');
